@@ -1,0 +1,19 @@
+<button (click)="goBack()">Go back</button>
+<br><br>
+<label>Journal ID : {{journal.id}}</label>
+<br><br>
+
+<form class="journal-form">
+    <div class="submit-container">
+        <button mat-button (click)='updateJournal()' class='button-update'>Update</button>
+        <button mat-button (click)='deleteJournal()' class='button-delete'>Delete</button>
+
+      <mat-form-field class="journal-widtfh">
+        <input matInput placeholder="Subject" [(ngModel)]="journal.subject" name="subject">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="journal-width">
+        <textarea matInput placeholder="Text" [(ngModel)]="journal.text" name="text"></textarea>
+      </mat-form-field>
+    </div>
+  </form>

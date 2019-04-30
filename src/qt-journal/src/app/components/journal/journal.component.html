@@ -46,9 +46,6 @@
           <div class="submit-container">
             <button mat-button (click)='addJournal()' class='button-add'>Add</button>
 
-            <mat-form-field class="journal-width">
-                <input matInput placeholder="Scripture"  name="scripture">
-              </mat-form-field>
   
             <mat-form-field class="journal-width">
               <input matInput placeholder="Subject" [(ngModel)]="model.subject" name="subject">
@@ -58,9 +55,6 @@
                 <textarea matInput placeholder="Text" [(ngModel)]="model.text" name="text"></textarea>
               </mat-form-field>    
                 
-            <mat-form-field class="journal-width">
-                <textarea matInput placeholder="Application" name="application"></textarea>
-              </mat-form-field>           
 
           </div>
         </form>
